@@ -1,21 +1,14 @@
- main() {
 
-//   String name;
-//         name="fpp";
-//   print(name);
+main() {
+//  String name ="";
+//  print(name.isNotEmpty);
 
-//   String name;
-//   print(name);
+//  String name ="";
+//  print(name.isEmpty);
 
-//    String name;
-//    name='123';
-//    print(name);
+//  String name ="foo";
+//  print(name.isEmpty);
 
-//    String name;
-//      name='123';
-//    print(name);
-
-    int name;
-    name=123;
-    print(name);
- }
+  String name ="foo";
+  print(name.isNotEmpty);
+}
