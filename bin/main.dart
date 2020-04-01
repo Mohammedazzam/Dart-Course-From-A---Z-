@@ -1,7 +1,8 @@
  main(){
-//     bool a1 = false;
-//     print(a1);
+//      List myinfo =["MohammedAzzam",21,"http://mohAzzam.com"];
+//      print(myinfo);
 
-      bool a1 = true;
-      print(a1);
+
+      List myinfo =["MohammedAzzam",21,"http://mohAzzam.com"];
+      print(myinfo[0]);
 }
