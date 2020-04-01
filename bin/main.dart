@@ -1,5 +1,9 @@
  main(){
-    String dart = ("Welcome To Dart Cource Variable Type Of String");
+//    int age = 27; //27
 
-    print(dart);
+//     double age = 27.30; //27.30
+
+     double age = 27; //27.0
+
+     print(age);
 }
