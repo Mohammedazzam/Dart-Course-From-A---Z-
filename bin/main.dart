@@ -1,3 +1,5 @@
  main(){
-    print('Welcome To Dart Course');
+    String dart = ("Welcome To Dart Cource Variable Type Of String");
+
+    print(dart);
 }
