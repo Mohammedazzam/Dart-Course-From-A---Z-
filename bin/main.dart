@@ -1,18 +1,30 @@
  main(){
 
-//      var myinfo = "My name is Foo";
-//      print(myinfo);
+//  String name = "foo";
+//         name = "xyz";
+//
+//  print(name);
 
-//       var myinfo = true;
-//       print(myinfo);
-
-//       var myinfo = 100;
-//       print(myinfo);
-
-//       var myinfo = 100.5;
-//       print(myinfo);
+//سيطبع رسالة خطأ
+//   String name = "foo";
+//   String name = "xyz";
+//
+//   print(name);
 
 
-       var myinfo = ["mohammed",27,'http://mohammed.com'];
-       print(myinfo);
+//   bool name = true;
+//        name = false;
+//   print(name);
+
+ //سيطبع xyz
+//   List myinfo = ['foo','bar'];
+//   myinfo [0]= "xyz";
+//
+//   print(myinfo[0]);
+
+   List myinfo = ['foo','bar'];
+   myinfo [0]= "xyz";
+   myinfo [1]= "test";
+
+   print(myinfo[1]);
 }
