@@ -1,8 +1,18 @@
  main(){
-//      List myinfo =["MohammedAzzam",21,"http://mohAzzam.com"];
+
+//      var myinfo = "My name is Foo";
 //      print(myinfo);
 
+//       var myinfo = true;
+//       print(myinfo);
 
-      List myinfo =["MohammedAzzam",21,"http://mohAzzam.com"];
-      print(myinfo[0]);
+//       var myinfo = 100;
+//       print(myinfo);
+
+//       var myinfo = 100.5;
+//       print(myinfo);
+
+
+       var myinfo = ["mohammed",27,'http://mohammed.com'];
+       print(myinfo);
 }
