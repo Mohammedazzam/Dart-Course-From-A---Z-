@@ -1,14 +1,20 @@
 
 main() {
-//  String name ="";
+//  List name = ["foo","bar"];
 //  print(name.isNotEmpty);
 
-//  String name ="";
-//  print(name.isEmpty);
+//  List name = [];
+//  print(name.isNotEmpty);
 
-//  String name ="foo";
-//  print(name.isEmpty);
+//  List name = ["foo","bar"];
+//  print(name.length);
 
-  String name ="foo";
-  print(name.isNotEmpty);
+//  List name = ["foo","bar"];
+//  print(name.length);
+
+//  List name = ["foo","bar"];
+//  print(name.first);
+
+  List name = ["foo","bar"];
+  print(name.last);
 }
