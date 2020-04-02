@@ -1,36 +1,36 @@
-import 'dart:math';
-
 
 //main() {
-//  double age =21.0;
-//  print(age);
+//  var ages = [21,36,50];
+//  print(ages);
+//}
+
+//main() {
+//  var ages = [21,36,50];
+//  print(ages.runtimeType);
 //}
 
 
 //main() {
-//  double age =21.0;
-//  print(age.round());
+//  var ages = ["foo" ,"var"];
+//  print(ages.runtimeType);
 //}
 
 //main() {
-//  double age =21.2;
-//  print(age.round());
+//  var ages = ["foo" ,"var",21];
+//  print(ages.runtimeType);
 //}
-
 
 //main() {
-//  double age =21.5;
-//  print(age.round());
+//  var ages = [true];
+//  print(ages.runtimeType);
 //}
 
-
-//main() {
-//  double age =21.5;
-//  print(age.roundToDouble());
+//  main() {
+//  var ages = [21.2];
+//  print(ages.runtimeType);
 //}
 
-
-main() {
-  double age =21.1;
-  print(age.roundToDouble());
+  main() {
+  String ages = "mmm";
+  print(ages.runtimeType);
 }
