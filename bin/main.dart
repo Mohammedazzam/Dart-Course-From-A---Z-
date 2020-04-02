@@ -1,14 +1,36 @@
 import 'dart:math';
 
+
 //main() {
-//  int value1 = 100;
-//  int value2 = 200;
-//  print(max(value1, value2));
+//  double age =21.0;
+//  print(age);
+//}
+
+
+//main() {
+//  double age =21.0;
+//  print(age.round());
+//}
+
+//main() {
+//  double age =21.2;
+//  print(age.round());
+//}
+
+
+//main() {
+//  double age =21.5;
+//  print(age.round());
+//}
+
+
+//main() {
+//  double age =21.5;
+//  print(age.roundToDouble());
 //}
 
 
 main() {
-  int value1 = 100;
-  int value2 = 200;
-  print(min(value1, value2));
+  double age =21.1;
+  print(age.roundToDouble());
 }
