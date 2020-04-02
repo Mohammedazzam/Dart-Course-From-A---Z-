@@ -1,11 +1,23 @@
 
+
 //main() {
-//  String name =" Foo ";
-//  print(name);
+//  int x = 1;
+//  int y = 1;
+//
+//  print(x*y);
+//}
+
+//main() {
+//  int x = 1;
+//  int y = 1;
+//
+//  print(x+y);
 //}
 
 
 main() {
-  String name =" Foo ";
-  print(name.trim());
+  int x = 1;
+  int y = 1;
+
+  print(x/y);
 }
