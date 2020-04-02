@@ -1,23 +1,36 @@
 
-
 //main() {
-//  int x = 1;
-//  int y = 1;
-//
-//  print(x*y);
+//  int xyz(val){
+//    return val;
+//  }
+//  print(xyz(1));
 //}
 
 //main() {
-//  int x = 1;
-//  int y = 1;
-//
-//  print(x+y);
+//  int xyz(val){
+//    return val;
+//  }
+//  print(xyz(100));
+//}
+
+//main() {
+//  int xyz(val){
+//    return val * 3;
+//  }
+//  print(xyz(100));
+//}
+
+//main() {
+//  int xyz(val1,val2){
+//    return val1 * val2;
+//  }
+//  print(xyz(50,40));
 //}
 
 
 main() {
-  int x = 1;
-  int y = 1;
-
-  print(x/y);
+  int xyz(val1,val2){
+    return val1 + val2;
+  }
+  print(xyz(50,40));
 }
