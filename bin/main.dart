@@ -1,36 +1,31 @@
 
-//main() {
-//  var ages = [21,36,50];
-//  print(ages);
-//}
-
-//main() {
-//  var ages = [21,36,50];
-//  print(ages.runtimeType);
-//}
-
-
-//main() {
-//  var ages = ["foo" ,"var"];
-//  print(ages.runtimeType);
-//}
-
-//main() {
-//  var ages = ["foo" ,"var",21];
-//  print(ages.runtimeType);
-//}
-
-//main() {
-//  var ages = [true];
-//  print(ages.runtimeType);
-//}
 
 //  main() {
-//  var ages = [21.2];
-//  print(ages.runtimeType);
+//  List args =['foo','var','xyz'];
+//  print(args[0]);
+//  print(args[1]);
+//  print(args[2]);
 //}
 
-  main() {
-  String ages = "mmm";
-  print(ages.runtimeType);
+//main() {
+//  List args =['foo','var','xyz'];
+//  for(int index =0; index<args.length; index++){
+//    print(args[index]);
+//  }
+//}
+
+
+//main() {
+//  List args =['foo','var','xyz','action','test'];
+//  for(int index =0; index<args.length; index++){
+//    print(args[index]);
+//  }
+//}
+
+
+main() {
+  List args =['foo','var','xyz','action','test'];
+  for(int index =0; index<args.length; index++){
+    print(index);
+  }
 }
