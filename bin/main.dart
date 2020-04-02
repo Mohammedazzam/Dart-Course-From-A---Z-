@@ -1,77 +1,22 @@
 
 //main() {
-//  void xyz(){
-//    return 1;
-//  }
+//  String name ="Foo";
+//  print(name.toString());
+//}
+
+//main() {
+//  String name ="Foo";
+//  print(name.toString()[0]);
 //}
 
 
 //main() {
-//  void xyz(){
-//    print("hi foo");
-//  }
-//  xyz();
-//}
-
-
-//main() {
-//  void xyz(){
-//    return "hi foo";
-//  }
-//  xyz();
-//}
-
-
-//main() {
-//  xyz(){
-//    return "hi foo";
-//  }
-//  print(xyz());
-//}
-
-
-//main() {
-//  xyz(){
-//  }
-//  print(xyz());
-//}
-
-
-//main() {
-//  xyz(){
-//    return 1;
-//  }
-//  print(xyz());
-//}
-
-
-//main() {
-//  String xyz(){
-//    return "Hi Foo";
-//  }
-//  print(xyz());
-//}
-
-
-//main() {
-//  bool xyz(){
-//    return false;
-//  }
-//  print(xyz());
-//}
-
-
-//main() {
-//  List xyz(){
-//    return ["Foo","bar"];
-//  }
-//  print(xyz());
+//  String name ="Foo";
+//  print(name.toString().length);
 //}
 
 
 main() {
-   xyz(){
-    return ["Foo","bar"];
-  }
-  print(xyz());
+  String name ="Foo";
+  print(name.length);
 }
