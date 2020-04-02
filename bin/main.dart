@@ -1,10 +1,11 @@
 
 //main() {
-//  String name ="Foo";
-//  print(name.toLowerCase());
+//  String name =" Foo ";
+//  print(name);
 //}
 
+
 main() {
-  String name ="Foo";
-  print(name.toUpperCase());
+  String name =" Foo ";
+  print(name.trim());
 }
