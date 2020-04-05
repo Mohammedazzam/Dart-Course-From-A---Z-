@@ -1,7 +1,7 @@
 
 
-import 'package:App/App.dart';
+import 'package:App/App.dart' as func;
 
 main(){
-  print(name());
+  print(func.names);
 }
