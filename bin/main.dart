@@ -1,10 +1,7 @@
-//main() {
-//  const myinfo ="foo";
-//  print(myinfo);
-//}
 
 
-main() {
-  const myinfo =["foo","bar"];
-  print(myinfo);
+import 'package:App/App.dart';
+
+main(){
+  print(name());
 }
