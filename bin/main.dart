@@ -1,108 +1,79 @@
 
+
+
+//main(){
+//  var fooClass = new FooBar();
+//  print(fooClass.name);
+//}
+//
+//class FooBar {
+//  String name = "foo";
+//}
+
+
+//هيك أن عملت overide ولكن هذه الطريقة غير صحيحة
+//main(){
+//  var fooClass = new FooBar();
+//  fooClass.name = "bar";
+//  print(fooClass.name);
+//}
+//class FooBar {
+//  String name = "foo";
+//}
+
+
+
+//هذه طريقة من ضمن الطرق
+//main(){
+//  var fooClass = new FooBar();
+//  fooClass.name = "bar";
+//  print(fooClass.name);
+//  print(fooClass.xyz());
+//}
+//class FooBar {
+//  String name = "foo";
+//  xyz(){
+//    return name;
+//  }
+//}
+
+
 //main(){
 //  var fooClass = new FooBar();
 //  print(fooClass.xyz());
-////  fooClass.bar();
+//  fooClass.name = "bar";
+//  print(fooClass.name);
 //}
-//class FooBar{
-//  String xyz(){
-//    return "This Is String";
-//  }
-//  void bar(){
-//    print("i am Bar Method");
-//  }
-//}
-
-
-//main(){
-//  var fooClass = new FooBar();
-//  print(fooClass.xyz());
-////  fooClass.bar();
-//}
-//class FooBar{
-// String xyz(){
-//    return 23;
-//  }
-//  void bar(){
-//    print("i am Bar Method");
+//class FooBar {
+//  String name = "foo";
+//  xyz(){
+//    return name;
 //  }
 //}
 
 
-//main(){
-//  var fooClass = new FooBar();
-//  print(fooClass.name);
-//
-//}
-//  class FooBar{
-//    var name ="hey i am Foo value";
-//
-//}
-
-
+//الأفضل استخدام مفهوم  initalize constructوأقوم بعمل تمرير للقيم
 
 //main(){
-//  var fooClass = new FooBar();
+//  var fooClass = new FooBar("bar");
 //  print(fooClass.name);
-//  print(fooClass.age);
-//
 //}
-//class FooBar{
-//  var name ="hey i am Foo value";
-//  int age = 21;
-//
-//}
-
-
-//main(){
-//  var fooClass = new FooBar();
-//  print(fooClass.name);
-//  print(fooClass.age);
-//  print(fooClass.names);
-//
-//}
-//class FooBar{
-//  var name ="hey i am Foo value";
-//  int age = 21;
-//  List names = ['foo','bar', 'xyz'];
-//
+//class FooBar {
+//  String name = "foo";
+//  FooBar(String name){
+//    this.name =name;
+//  }
 //}
 
-
-
-//main(){
-//  var fooClass = new FooBar();
-//  print(fooClass.name);
-//  print(fooClass.age);
-//  print(fooClass.names);
-//  print(fooClass.online);
-//
-//}
-//class FooBar{
-//  var name ="hey i am Foo value";
-//  int age = 21;
-//  List names = ['foo','bar', 'xyz'];
-//  bool online = true;
-//
-//
-//}
-
-
+//لو ناديت على ال constructor قبل الname راح يشتغل
 main(){
-  var fooClass = new FooBar();
+  var fooClass = new FooBar("bar");
   print(fooClass.name);
-  print(fooClass.age);
-  print(fooClass.names[0]);
-  print(fooClass.online);
-  print(fooClass.round);
-
 }
-class FooBar{
-  var name ="hey i am Foo value";
-  int age = 21;
-  List names = ['foo','bar', 'xyz'];
-  bool online = true;
-  double round = 21.65;
-
+class FooBar {
+  FooBar(String name){
+    this.name =name;
+  }
+  String name = "foo";
 
 }
