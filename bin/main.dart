@@ -1,16 +1,20 @@
 
 
-//main(){
-//  foo(){
-//    return 1;
-//  }
-//  print(foo());
-//}
+//sdsfsgdfssfdvfv
+
+/*
+*
+*
+*sdsd
+* sdfdd
+*
+*
+*
+ */
 
 main(){
   foo(){
     return 1;
-    return 2;
   }
   print(foo());
 }
