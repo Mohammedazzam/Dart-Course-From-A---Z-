@@ -1,7 +1,7 @@
 
 
 //main(){
-//  var dog = new FooBar();
+//  var dog = new Dog();
 //    print(dog.name);
 //}
 //class FooBar {
@@ -16,7 +16,7 @@
 
 
 main(){
-  var dog = new FooBar();
+  var dog = new Dog();
   print(dog.age);
 }
 class FooBar {
