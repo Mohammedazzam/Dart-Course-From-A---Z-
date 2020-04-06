@@ -2,11 +2,14 @@
 
 //main(){
 //  var dog = new Dog();
-//    print(dog.name);
+//  print(dog.price());
 //}
 //class FooBar {
 //  String name = "foo";
 //  int age = 20;
+//  double price(){
+//    return 300.5;
+//  }
 //
 //}
 //
@@ -17,11 +20,15 @@
 
 main(){
   var dog = new Dog();
-  print(dog.age);
+  print(dog.names );
 }
 class FooBar {
   String name = "foo";
   int age = 20;
+  List names =  ['foo','xyz', 'bar'];
+  double price(){
+    return 300.5;
+  }
 
 }
 
