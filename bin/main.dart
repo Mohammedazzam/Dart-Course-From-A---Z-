@@ -2,78 +2,40 @@
 
 
 //main(){
-//  var fooClass = new FooBar();
-//  print(fooClass.name);
-//}
-//
-//class FooBar {
-//  String name = "foo";
-//}
-
-
-//هيك أن عملت overide ولكن هذه الطريقة غير صحيحة
-//main(){
-//  var fooClass = new FooBar();
-//  fooClass.name = "bar";
-//  print(fooClass.name);
-//}
-//class FooBar {
-//  String name = "foo";
-//}
-
-
-
-//هذه طريقة من ضمن الطرق
-//main(){
-//  var fooClass = new FooBar();
-//  fooClass.name = "bar";
-//  print(fooClass.name);
-//  print(fooClass.xyz());
-//}
-//class FooBar {
-//  String name = "foo";
-//  xyz(){
-//    return name;
-//  }
-//}
-
-
-//main(){
-//  var fooClass = new FooBar();
-//  print(fooClass.xyz());
-//  fooClass.name = "bar";
-//  print(fooClass.name);
-//}
-//class FooBar {
-//  String name = "foo";
-//  xyz(){
-//    return name;
-//  }
-//}
-
-
-//الأفضل استخدام مفهوم  initalize constructوأقوم بعمل تمرير للقيم
-
-//main(){
 //  var fooClass = new FooBar("bar");
 //  print(fooClass.name);
 //}
 //class FooBar {
-//  String name = "foo";
-//  FooBar(String name){
-//    this.name =name;
-//  }
+//  FooBar(this.name);
+//    String name = "foo";
+//
 //}
 
-//لو ناديت على ال constructor قبل الname راح يشتغل
+//main(){
+//  var fooClass = new FooBar("bar",22);
+//  print(fooClass.name);
+//  print(fooClass.age);
+//}
+//class FooBar {
+//  FooBar(this.name,this.age);
+//  String name = "foo";
+//  int age = 20;
+//
+//}
+
+
+
 main(){
-  var fooClass = new FooBar("bar");
+  var fooClass = new FooBar("bar",22);
   print(fooClass.name);
+  print(fooClass.foo());
 }
 class FooBar {
-  FooBar(String name){
-    this.name =name;
-  }
+  FooBar(this.name,this.age);
   String name = "foo";
+  int age = 20;
 
+  foo(){
+    return age;
+  }
 }
