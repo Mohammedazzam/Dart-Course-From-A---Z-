@@ -19,8 +19,8 @@
 
 
 main(){
-  var dog = new Dog();
-  print(dog.names );
+  var dog = new Cat();
+  print(dog.name );
 }
 class FooBar {
   String name = "foo";
@@ -33,5 +33,9 @@ class FooBar {
 }
 
 class Dog extends FooBar{
+
+}
+
+class Cat extends Dog{
 
 }
