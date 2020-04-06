@@ -2,29 +2,63 @@
 
 import 'package:App/App.dart' as dart;
 
-//
+
 //main() {
-//  int year = 0;
-//  int month =4;
-//  if (year > 0 || month ==4) {
-//    print("yes is max");
-//  } else if (year == 0) {
-//    print("is equle");
-//  } else {
-//    print("no is not max");
-//  }
+//  int year = 2019;
+//  year == 0 ? print("is True") :print("is False");
+//}
+
+//main() {
+//  int year = 2019;
+//  year > 0 ?
+//      year ==2019 ? print("is True") : print("is False")
+//            :
+//  print("is False");
 //}
 
 
 
+//main() {
+//  int year = 2019;
+//  year > 0 ?
+//  year !=2019 ? print("is True") : print("is False")
+//      :
+//  print("is False");
+//}
+
+
+//main() {
+//  int year = 2019;
+//  if(year != 0){
+//    print("is true");
+//  }
+//}
+
+
+//main() {
+//  int year = 2019;
+//  if(year <= 0){
+//    print("is true");
+//  }else{
+//    print("is no");
+//  }
+//}
+
+//main() {
+//  int year = 2019;
+//  if(year >= 0){
+//    print("is true");
+//  }else{
+//    print("is no");
+//  }
+//}
+
+
 main() {
-  int year = 0;
-  int month =4;
-  if (year > 0 && month ==4) {
-    print("yes is max");
-  } else if (year == 0) {
-    print("is equle");
-  } else {
-    print("no is not max");
+  int year = 2019;
+  if(year == 0 || year ==0){
+    print("is true");
+  }else{
+    print("is no");
   }
 }
