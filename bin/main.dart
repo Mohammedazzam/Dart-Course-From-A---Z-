@@ -1,23 +1,11 @@
 
-
-
-//main(){
-//  var fooClass = new FooBar("bar");
-//  print(fooClass.name);
-//}
-//class FooBar {
-//  FooBar(this.name);
-//    String name = "foo";
 //
-//}
-
 //main(){
-//  var fooClass = new FooBar("bar",22);
+//  var fooClass = new FooBar();
 //  print(fooClass.name);
-//  print(fooClass.age);
 //}
 //class FooBar {
-//  FooBar(this.name,this.age);
+////  FooBar(this.name,this.age);
 //  String name = "foo";
 //  int age = 20;
 //
@@ -25,17 +13,61 @@
 
 
 
+//main(){
+//  var fooClass = new FooBar();
+//  fooClass.name ="bar";
+//  fooClass.age = 23;
+//  print(fooClass.age);
+//}
+//class FooBar {
+//  String name = "foo";
+//  int age = 20;
+////  FooBar(this.name,this.age);
+//
+//}
+
+
+
+//main(){
+//  var fooClass = new FooBar()..name ="bar"..age = 23;
+//  print(fooClass.age);
+//}
+//class FooBar {
+//  String name = "foo";
+//  int age = 20;
+////  FooBar(this.name,this.age);
+//
+//}
+
+
+//main(){
+//  var fooClass = new FooBar()..name ="bar"..age = 40;
+//  print(fooClass.age);
+//  print(fooClass.name);
+//}
+//class FooBar {
+//  String name = "foo";
+//  int age = 20;
+////  FooBar(this.name,this.age);
+//
+//}
+
+
+
 main(){
-  var fooClass = new FooBar("bar",22);
+  var fooClass = new FooBar()
+    ..online = false
+    ..name ="bar"
+    ..age = 40;
+
+  print(fooClass.age);
   print(fooClass.name);
-  print(fooClass.foo());
+  print(fooClass.online);
 }
 class FooBar {
-  FooBar(this.name,this.age);
+  bool online = true;
   String name = "foo";
   int age = 20;
+//  FooBar(this.name,this.age);
 
-  foo(){
-    return age;
-  }
 }
