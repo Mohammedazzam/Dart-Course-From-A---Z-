@@ -1,31 +1,15 @@
 
 
-//main(){
-//  var dog = new Dog();
-//  print(dog.price());
-//}
-//class FooBar {
-//  String name = "foo";
-//  int age = 20;
-//  double price(){
-//    return 300.5;
-//  }
-//
-//}
-//
-//class Dog extends FooBar{
-//
-//}
-
 
 main(){
-  var dog = new Cat();
+  var dog = new Dog("bar");
   print(dog.name );
 }
 class FooBar {
   String name = "foo";
   int age = 20;
   List names =  ['foo','xyz', 'bar'];
+  FooBar(this.name);
   double price(){
     return 300.5;
   }
@@ -33,9 +17,6 @@ class FooBar {
 }
 
 class Dog extends FooBar{
-
-}
-
-class Cat extends Dog{
+  Dog(String name) : super(name);
 
 }
