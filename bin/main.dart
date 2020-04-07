@@ -2,35 +2,68 @@
 
 
 //main(){
-//  var dog = new Dog("bar");
-//  print(dog.dogname );
+//  var foobar = new FooBar();
+//  print(foobar.age);
 //}
-//class FooBar {
-//  String name = "foo";
-//  FooBar(this.name);
+//abstract class Rules{
+//  String name;
+//
+//}
+//class FooBar extends Rules{
+//  int age = 20;
 //  }
+
+
+//main(){
+//  var foobar = new FooBar();
+//  print(foobar.name);
+//}
+//abstract class Rules{
+//  String name;
 //
-//
-//class Dog extends FooBar{
-//  String dogname = "rex";
-//  Dog(String name) : super(name);
-//
+//}
+//class FooBar extends Rules{
+//  int age = 20;
 //}
 
 
-//لو بدي اعمل override
+//main(){
+//  var foobar = new FooBar();
+//  print(foobar.name);
+//}
+//abstract class Rules{
+//  String name;
+//
+//}
+//class FooBar extends Rules{
+//  int age = 20;
+//  String name = "foo";
+//}
+
+
+
+//main(){
+//  var foobar = new FooBar();
+//  print(foobar.name);
+//}
+//abstract class Rules{
+//  String name = "foo";
+//
+//}
+//class FooBar extends Rules{
+//  int age = 20;
+//}
+
+
 main(){
-  var dog = new Dog("bar","lucky");
-  print(dog.dogname );
+  var foobar = new FooBar();
+  print(foobar.name);
 }
-class FooBar {
+abstract class Rules{
   String name = "foo";
-  FooBar(this.name);
+
 }
-
-
-class Dog extends FooBar{
-  String dogname = "rex";
-  Dog(String name,this.dogname) : super(name);
-
+class FooBar extends Rules{
+  int age = 20;
+  String name = "bar";
 }
