@@ -1,10 +1,20 @@
 
 
 
+//main(){
+//  var names ={'name':'foo'};
+//  print(names['name']);
+//}
+
+
+//main(){
+//  var names ={'name':'foo','age':12,'online':true,'salart':3000};
+//  print(names);
+//}
+
+
+
 main(){
-  List names = new List(3);
-  names[0]= "test";
-  names[1]= "foo";
-  names[2]= "bar";
-  print(names);
+  var names ={'name':'foo','age':12,'online':true,'salart':3000};
+  print(names['age']);
 }
