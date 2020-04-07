@@ -1,69 +1,61 @@
 
 
-
 //main(){
 //  var foobar = new FooBar();
-//  print(foobar.age);
+//  print(foobar.xyz());
 //}
 //abstract class Rules{
-//  String name;
-//
-//}
-//class FooBar extends Rules{
-//  int age = 20;
+//  String name = "foo";
+//  int xyz(){
+//    return 1000;
 //  }
-
-
-//main(){
-//  var foobar = new FooBar();
-//  print(foobar.name);
-//}
-//abstract class Rules{
-//  String name;
 //
 //}
 //class FooBar extends Rules{
 //  int age = 20;
-//}
-
-
-//main(){
-//  var foobar = new FooBar();
-//  print(foobar.name);
-//}
-//abstract class Rules{
-//  String name;
+//  String name = "bar";
 //
 //}
-//class FooBar extends Rules{
-//  int age = 20;
-//  String name = "foo";
-//}
 
 
-
-//main(){
-//  var foobar = new FooBar();
-//  print(foobar.name);
-//}
-//abstract class Rules{
-//  String name = "foo";
-//
-//}
-//class FooBar extends Rules{
-//  int age = 20;
-//}
-
-
+//لو بدي اعمل override
 main(){
   var foobar = new FooBar();
-  print(foobar.name);
+  print(foobar.xyz());
 }
 abstract class Rules{
   String name = "foo";
+  int xyz(){
+    return 1000;
+  }
 
 }
 class FooBar extends Rules{
   int age = 20;
   String name = "bar";
+  xyz() {
+    return 3000;
+  }
 }
+
+
+////لو بدي اعمل override
+//main(){
+//  var foobar = new FooBar();
+//  print(foobar.xyz());
+//}
+//abstract class Rules{
+//  String name = "foo";
+//  int xyz(){
+//    return 1000;
+//  }
+//
+//}
+//class FooBar extends Rules{
+//  int age = 20;
+//  String name = "bar";
+//  int xyz() {
+//    return 3000;
+//  }
+//
+//}
