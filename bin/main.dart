@@ -1,19 +1,10 @@
 
-//main(){
-//  List names = ["foo","bar","xyz"];
-//  print(names[0]);
-//}
-
-//main(){
-//  List names = new List();
-//  names.add("foo");
-//  print(names[0]);
-//}
 
 
 main(){
-  List names = new List();
-  names.add("foo");
-  names.add("bar");
-  print(names[1]);
+  List names = new List(3);
+  names[0]= "test";
+  names[1]= "foo";
+  names[2]= "bar";
+  print(names);
 }
