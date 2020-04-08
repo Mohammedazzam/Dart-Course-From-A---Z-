@@ -1,73 +1,41 @@
-import 'dart:async';
-import 'dart:io';
-import 'dart:convert' as convert;
-import 'package:http/http.dart' as http;
-
-
-//main() {
-////  String name = stdin.readLineSync();
-//  Map post = new Map();
-//  Future<dynamic> getDate() async{
-//    var response = await http.get('https://jsonplaceholder.typicode.com/posts/1');
-//    if(response.statusCode == 200){
-//      var data = convert.jsonDecode(response.body);
-//      post.addAll(data);
-//    };
-//  }
-//  print('Please Wait Until Loade Your Data');
-//  getDate();
-//  print('Your Data Is $post');
+//main(){
+//  const name = "foo";
+//  print(name);
 //}
-
-//هنا بدي اشرح فكرة ال await
-//main() {
-////  String name = stdin.readLineSync();
-//  Map post = new Map();
-//  Future<dynamic> getDate() async{
-//    var response = await http.get('https://jsonplaceholder.typicode.com/posts/1');
-//    if(response.statusCode == 200){
-//      var data = convert.jsonDecode(response.body);
-//      print(data); //حتى أتأكد إذا فيه data
-//      post.addAll(data);
-//    };
-//  }
-//  print('Please Wait Until Loade Your Data');
-//  getDate();
-//  print('Your Data Is $post');
+//
+//class Dog{
+//
 //}
 
 
-//طريقة اخرى
-//main() {
-////  String name = stdin.readLineSync();
-//  Map post = new Map();
-//  Future<dynamic> getDate() async{
-//    var response = await(http.get('https://jsonplaceholder.typicode.com/posts/1'));
-//    if(response.statusCode == 200){
-//      var data = convert.jsonDecode(response.body);
-//      print(data); //حتى أتأكد إذا فيه data
-//      post.addAll(data);
-//    };
-//  }
-//  print('Please Wait Until Loade Your Data');
-//  getDate();
-//  print('Your Data Is $post');
+//main(){
+//}
+//
+//class Dog{
+//  const name = "foo Data";
 //}
 
 
-main() {
-//  String name = stdin.readLineSync();
-  Map post = new Map();
-  Future<dynamic> getDate() async{
-    var response = await(http.get('https://jsonplaceholder.typicode.com/posts/1'));
-    if(response.statusCode == 200){
-      var data = convert.jsonDecode(response.body);
-//      print(data);
-      post.addAll(data);
-      print(post);
+//main(){
+//  var foo = new Dog();
+//  print(foo.getname);
+//}
+//
+//class Dog{
+// static const name = "foo Data";
+// String getname = name;
+//}
 
-    };
+
+
+main(){
+  var foo = new Dog();
+  print(foo.getname());
+}
+
+class Dog{
+  static const name = "foo Data";
+  String getname(){
+    return name;
   }
-  print('Please Wait Until Loade Your Data');
-  getDate();
 }
