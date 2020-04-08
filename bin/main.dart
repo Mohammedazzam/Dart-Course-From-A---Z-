@@ -1,33 +1,49 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:convert' as convert;
+import 'package:http/http.dart' as http;
 
+//main() {
+////  String name = stdin.readLineSync();
+//  Future<dynamic> getDate() async{
+//    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
+//    return response;
+//  }
+//  getDate().then((value){
+//    print(value) ;
+//  });
 
 
 //main() {
-//  Future<String> getDate() async{
-//    return 'Test Data';
+////  String name = stdin.readLineSync();
+//  Future<dynamic> getDate() async{
+//    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
+//    return response;
 //  }
 //  getDate().then((value){
-//    print('value Date is : $value');
+//    print(value.statusCode) ;
 //  });
 //}
 
 
 //main() {
-//  Future<String> getDate() async{
-//    return await'Test Data';
+////  String name = stdin.readLineSync();
+//  Future<dynamic> getDate() async{
+//    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
+//    return response;
 //  }
 //  getDate().then((value){
-//    print('value Date is : $value');
+//    print(value.body); //هيك راح يطبعلي بيانات ملف ال json
 //  });
 //}
 
 main() {
-  String name = stdin.readLineSync(); //لازم أدخل داتا في ال console
-  Future<String> getDate(name) async{
-    return await'Test Data';
+//  String name = stdin.readLineSync();
+  Future<dynamic> getDate() async{
+    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
+    return response;
   }
-  getDate(name).then((value){
-    print('value Date is : $value');
+  getDate().then((value){
+    print(convert.jsonDecode(value.body)); // راح يحول ملف ال json لأسلوب ال decode  بمعنى حولها ل map حقيقية
   });
 }
