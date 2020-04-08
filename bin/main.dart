@@ -1,56 +1,36 @@
 
+import 'package:test/test.dart';
+
 //main(){
-//  var foo = 'foo';
-//  switch(foo){
-//    case 'foo':{
-//      print('hi this is True Value');
-//    }
+//  String name;
+//
+//  try{
+//    print(name.isEmpty)//بمعنى القيمة خالية;
+//  }catch(error){
+//    return throw new Exception('The Name Not Have Value');
 //  }
 //}
 
 
+
 //main(){
-//  var foo = 'foo';
-//  switch(foo){
-//    case 'foo':{
-//      print('hi this is True Value');
-//    }
-//    break;
-//    case 'xyz':{
-//      print('iam xyz ');
-//    }
+//  String name = 'foo';
+//
+//  try{
+//    print(name.isNotEmpty); //بمعنى المتغير قيمته غير خالية
+//  }catch(error){
+//    return throw new Exception('The Name Not Have Value');
 //  }
 //}
 
-
-//main(){
-//  var foo = 'xyz';
-//  switch(foo){
-//    case 'foo':{
-//      print('hi this is True Value');
-//    }
-//    break;
-//    case 'xyz':{
-//      print('iam xyz ');
-//    }
-//    break;
-//  }
-//}
 
 
 main(){
-  var foo = 'bar';
-  switch(foo){
-    case 'foo':{
-      print('hi this is True Value');
-    }
-    break;
-    case 'xyz':{
-      print('iam xyz ');
-    }
-    break;
-    default:{//بمعنى لو وجدت أي قيمة غير الموجود ياخد هذه الديفولت
-      print('Hey How Value This Time');
-    }
+  String name;
+
+  try{
+    print(name.isNotEmpty); //بمعنى المتغير قيمته غير خالية
+  }catch(error){
+    return throw new FormatException('The Name Not Have Value');
   }
 }
