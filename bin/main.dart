@@ -1,23 +1,33 @@
+import 'dart:async';
 import 'dart:io';
 
 
-//main() {
-//  print("please Entre Your Name: ");
-//  String name = stdin.readLineSync() ;
-//}
 
 //main() {
-//  print("please Entre Your Name: ");
-//  String name = stdin.readLineSync() ;
-//  print("Your Nmae Is ${name}");
+//  Future<String> getDate() async{
+//    return 'Test Data';
+//  }
+//  getDate().then((value){
+//    print('value Date is : $value');
+//  });
 //}
 
+
+//main() {
+//  Future<String> getDate() async{
+//    return await'Test Data';
+//  }
+//  getDate().then((value){
+//    print('value Date is : $value');
+//  });
+//}
 
 main() {
-  print("please Entre Your Name: ");
-  String name = stdin.readLineSync();
-  print("Enter Your Age");
-  String age = stdin.readLineSync();
-  print("Your Nmae Is ${name}");
-  print("Your Nmae Is ${age}");
+  String name = stdin.readLineSync(); //لازم أدخل داتا في ال console
+  Future<String> getDate(name) async{
+    return await'Test Data';
+  }
+  getDate(name).then((value){
+    print('value Date is : $value');
+  });
 }
