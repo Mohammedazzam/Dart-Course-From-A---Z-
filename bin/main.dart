@@ -3,47 +3,71 @@ import 'dart:io';
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 
-//main() {
-////  String name = stdin.readLineSync();
-//  Future<dynamic> getDate() async{
-//    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
-//    return response;
-//  }
-//  getDate().then((value){
-//    print(value) ;
-//  });
-
 
 //main() {
 ////  String name = stdin.readLineSync();
+//  Map post = new Map();
 //  Future<dynamic> getDate() async{
-//    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
-//    return response;
+//    var response = await http.get('https://jsonplaceholder.typicode.com/posts/1');
+//    if(response.statusCode == 200){
+//      var data = convert.jsonDecode(response.body);
+//      post.addAll(data);
+//    };
 //  }
-//  getDate().then((value){
-//    print(value.statusCode) ;
-//  });
+//  print('Please Wait Until Loade Your Data');
+//  getDate();
+//  print('Your Data Is $post');
+//}
+
+//هنا بدي اشرح فكرة ال await
+//main() {
+////  String name = stdin.readLineSync();
+//  Map post = new Map();
+//  Future<dynamic> getDate() async{
+//    var response = await http.get('https://jsonplaceholder.typicode.com/posts/1');
+//    if(response.statusCode == 200){
+//      var data = convert.jsonDecode(response.body);
+//      print(data); //حتى أتأكد إذا فيه data
+//      post.addAll(data);
+//    };
+//  }
+//  print('Please Wait Until Loade Your Data');
+//  getDate();
+//  print('Your Data Is $post');
 //}
 
 
+//طريقة اخرى
 //main() {
 ////  String name = stdin.readLineSync();
+//  Map post = new Map();
 //  Future<dynamic> getDate() async{
-//    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
-//    return response;
+//    var response = await(http.get('https://jsonplaceholder.typicode.com/posts/1'));
+//    if(response.statusCode == 200){
+//      var data = convert.jsonDecode(response.body);
+//      print(data); //حتى أتأكد إذا فيه data
+//      post.addAll(data);
+//    };
 //  }
-//  getDate().then((value){
-//    print(value.body); //هيك راح يطبعلي بيانات ملف ال json
-//  });
+//  print('Please Wait Until Loade Your Data');
+//  getDate();
+//  print('Your Data Is $post');
 //}
+
 
 main() {
 //  String name = stdin.readLineSync();
+  Map post = new Map();
   Future<dynamic> getDate() async{
-    var response = await http.get('https://jsonplaceholder.typicode.com/posts');
-    return response;
+    var response = await(http.get('https://jsonplaceholder.typicode.com/posts/1'));
+    if(response.statusCode == 200){
+      var data = convert.jsonDecode(response.body);
+//      print(data);
+      post.addAll(data);
+      print(post);
+
+    };
   }
-  getDate().then((value){
-    print(convert.jsonDecode(value.body)); // راح يحول ملف ال json لأسلوب ال decode  بمعنى حولها ل map حقيقية
-  });
+  print('Please Wait Until Loade Your Data');
+  getDate();
 }
