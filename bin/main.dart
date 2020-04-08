@@ -1,41 +1,56 @@
-//enum data{
-//  data1,
-//  data2,
-//  data3
-//}
+
 //main(){
-//   print(data);
+//  var foo = 'foo';
+//  switch(foo){
+//    case 'foo':{
+//      print('hi this is True Value');
+//    }
+//  }
 //}
 
 
-//enum data{
-//  data1,
-//  data2,
-//  data3
-//}
 //main(){
-//  print(data.values);
+//  var foo = 'foo';
+//  switch(foo){
+//    case 'foo':{
+//      print('hi this is True Value');
+//    }
+//    break;
+//    case 'xyz':{
+//      print('iam xyz ');
+//    }
+//  }
 //}
 
 
-//enum data{
-//  data1,
-//  data2,
-//  data3
-//}
 //main(){
-//  print(data.data1);
+//  var foo = 'xyz';
+//  switch(foo){
+//    case 'foo':{
+//      print('hi this is True Value');
+//    }
+//    break;
+//    case 'xyz':{
+//      print('iam xyz ');
+//    }
+//    break;
+//  }
 //}
 
 
-enum data{
-  data1,
-  data2,
-  data3
-}
 main(){
-  var test = data.data1;
-  if(test == data.data1){
-    print('hi enum Data');
+  var foo = 'bar';
+  switch(foo){
+    case 'foo':{
+      print('hi this is True Value');
+    }
+    break;
+    case 'xyz':{
+      print('iam xyz ');
+    }
+    break;
+    default:{//بمعنى لو وجدت أي قيمة غير الموجود ياخد هذه الديفولت
+      print('Hey How Value This Time');
+    }
   }
 }
