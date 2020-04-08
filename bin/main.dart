@@ -1,41 +1,32 @@
+
 //main(){
-//  const name = "foo";
-//  print(name);
+//  var foo = new Dog();
+//  print(foo.getData());
 //}
 //
 //class Dog{
-//
-//}
-
-
-//main(){
-//}
-//
-//class Dog{
-//  const name = "foo Data";
+//  static const  bool name = true;
+//  bool getData(){
+//    return name;
+//  }
 //}
 
 
 //main(){
 //  var foo = new Dog();
-//  print(foo.getname);
+//  print(foo.name);
 //}
 //
 //class Dog{
-// static const name = "foo Data";
-// String getname = name;
+//  final String name = 'Hi Foo';
 //}
-
 
 
 main(){
   var foo = new Dog();
-  print(foo.getname());
+  print(foo.name);
 }
 
 class Dog{
-  static const name = "foo Data";
-  String getname(){
-    return name;
-  }
+  final String name = 'Hi Foo';
 }
