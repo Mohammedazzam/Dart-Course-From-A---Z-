@@ -1,60 +1,73 @@
-
 //main(){
-//  String name;
+//  Map users = new Map();
+//  users['user1'] = 'foo';
+//  users['user2'] = 'foo';
 //
-//  try{
-//    print(name.isNotEmpty);
-//  }catch(error){
-//    print(error);
-//  }
+//  print(users);
 //}
 
+
+//import 'dart:collection';
+//
 //main(){
-//  String name;
+//  Map users = new Map();
+//  users['user1'] = 'foo';
+//  users['user2'] = 'foo';
+//  print(users);
 //
-//  try{
-//    print(name.isNotEmpty);
-//  }catch(error){
-//    print(error);
-//  }finally{ //هذه بمعنى اطبع جملة اخيرة عشان أعرف أنا وين
-//    print('End Run Code In Main.dart');
-//  }
+//  var names = new HashMap();
+//  names['foo'] = 'data1';
+//  names['bar'] = 'data2';
+//  names['xyz'] = 'data3';
+//  print(names);
 //}
 
 
-//سيطبع قبل عملية الاكسيبشن
+//import 'dart:collection';
 //main(){
-//  String name;
+//  Map users = new Map();
+//  users['user1'] = 'foo';
+//  users['user2'] = 'foo';
+//  print(users);
 //
-//  try{
-//    print(name.isNotEmpty);
-//  }catch(error){
-//    return throw new DogException().getError();
-//  }finally{ //هذه بمعنى اطبع جملة اخيرة عشان أعرف أنا وين
-//    print('End Run Code In Main.dart');
-//  }
-//}
-//class DogException implements Exception{
-//  String getError(){
-//    return 'Hey I am Error Message';
-//  }
+//  var names = new HashMap();
+//  names['foo'] = 'data1';
+//  names['bar'] = 'data2';
+//  names['xyz'] = 'data3';
+//
+//  names.remove('foo');
+//  print(names);
 //}
 
 
-//طريقة اخرى للاكسيبشن
+//import 'dart:collection';
+//main(){
+//  Map users = new Map();
+//  users['user1'] = 'foo';
+//  users['user2'] = 'foo';
+//  print(users);
+//
+//  var names = new HashMap();
+//  names[0] = 'data1';
+//  names[1] = 'data2';
+//  names[2] = 'data3';
+//
+//  print(names);
+//}
+
+
+import 'dart:collection';
 main(){
-  String name;
+  Map users = new Map();
+  users['user1'] = 'foo';
+  users['user2'] = 'foo';
+  print(users);
 
-  try{
-    print(name.isNotEmpty);
-  }catch(error){
-    return throw new DogException().getError(error);
-  }finally{ //هذه بمعنى اطبع جملة اخيرة عشان أعرف أنا وين
-    print('This Code In Main.dart');
-  }
-}
-class DogException implements Exception{
-  String getError(val){
-    return val;
-  }
+  var names = new HashMap();
+  names[3] = 'data1';
+  names[2] = 'data2';
+  names[1] = 'data3';
+  names[0] = 'rex';
+
+  print(names);
 }
