@@ -1,73 +1,156 @@
-//main(){
-//  Map users = new Map();
-//  users['user1'] = 'foo';
-//  users['user2'] = 'foo';
-//
-//  print(users);
-//}
-
 
 //import 'dart:collection';
-//
 //main(){
-//  Map users = new Map();
-//  users['user1'] = 'foo';
-//  users['user2'] = 'foo';
-//  print(users);
-//
-//  var names = new HashMap();
-//  names['foo'] = 'data1';
-//  names['bar'] = 'data2';
-//  names['xyz'] = 'data3';
-//  print(names);
+//  List data = new List();
+//  data.add('test');
+//  print(data);
 //}
 
 
 //import 'dart:collection';
 //main(){
-//  Map users = new Map();
-//  users['user1'] = 'foo';
-//  users['user2'] = 'foo';
-//  print(users);
+//  List data = new List();
+//  data.add('test');
+//  data.add('test1');
+//  print(data);
 //
-//  var names = new HashMap();
-//  names['foo'] = 'data1';
-//  names['bar'] = 'data2';
-//  names['xyz'] = 'data3';
-//
-//  names.remove('foo');
-//  print(names);
 //}
 
 
 //import 'dart:collection';
 //main(){
-//  Map users = new Map();
-//  users['user1'] = 'foo';
-//  users['user2'] = 'foo';
-//  print(users);
+//  List data = new List(); //سيطبعها على شكل List
+//  data.add('test');
+//  data.add('test1');
+//  print(data);
 //
-//  var names = new HashMap();
-//  names[0] = 'data1';
-//  names[1] = 'data2';
-//  names[2] = 'data3';
+//  Set setData = new Set(); //سيطبعها على شكل map
+//  setData.add(1);
+//  setData.add(2);
+//  setData.add(3);
+//  setData.add(4);
 //
-//  print(names);
+//  print(setData);
+//}
+
+//import 'dart:collection';
+//main(){
+//  List data = new List(); //سيطبعها على شكل List
+//  data.add('test');
+//  data.add('test1');
+//  print(data);
+//
+//  Set setData = new Set(); //سيطبعها على شكل map
+//  setData.add(1);
+//  setData.add(2);
+//  setData.add(3);
+//  setData.add(4);
+//
+//  print(setData);
+//
+//  HashSet numbers = new HashSet();
+//  numbers.add(10);
+//  numbers.add(20);
+//  numbers.add(30);
+//
+//  print(numbers); //سيطبع بشكل طبيعي
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  List data = new List(); //سيطبعها على شكل List
+//  data.add('test');
+//  data.add('test1');
+//  print(data);
+//
+//  Set setData = new Set(); //سيطبعها على شكل map
+//  setData.add(1);
+//  setData.add(2);
+//  setData.add(3);
+//  setData.add(4);
+//
+//  print(setData);
+//
+//  HashSet numbers = new HashSet();
+//  numbers.add(30);
+//  numbers.add(10);
+//  numbers.add(20);
+//
+//  print(numbers); //سيطبع بشكل طبيعي كما السابق
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  List data = new List(); //سيطبعها على شكل List
+//  data.add('test');
+//  data.add('test1');
+//  print(data);
+//
+//  Set setData = new Set(); //سيطبعها على شكل map
+//  setData.add(1);
+//  setData.add(2);
+//  setData.add(3);
+//  setData.add(4);
+//
+//  print(setData);
+//
+//  HashSet numbers = new HashSet();
+//  numbers.add(30);
+//  numbers.add(10);
+//  numbers.add(20);
+//  numbers.add(40);
+//
+//  print(numbers); //حصل تناقض في موقع الداتا
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  List data = new List(); //سيطبعها على شكل List
+//  data.add('test');
+//  data.add('test1');
+//  print(data);
+//
+//  Set setData = new Set(); //سيطبعها على شكل map
+//  setData.add(1);
+//  setData.add(2);
+//  setData.add(3);
+//  setData.add(4);
+//
+//  print(setData);
+//
+//  HashSet numbers = new HashSet();
+//  numbers.add(0);
+//  numbers.add(1);
+//  numbers.add(2);
+//  numbers.add(3);
+//  numbers.add(4);
+//
+//  print(numbers); //سيطبع بشكل مرتب
 //}
 
 
 import 'dart:collection';
 main(){
-  Map users = new Map();
-  users['user1'] = 'foo';
-  users['user2'] = 'foo';
-  print(users);
+  List data = new List(); //سيطبعها على شكل List
+  data.add('test');
+  data.add('test1');
+  print(data);
 
-  var names = new HashMap();
-  names[3] = 'data1';
-  names[2] = 'data2';
-  names[1] = 'data3';
-  names[0] = 'rex';
+  Set setData = new Set(); //سيطبعها على شكل map
+  setData.add(1);
+  setData.add(2);
+  setData.add(3);
+  setData.add(4);
 
-  print(names);
+  print(setData);
+
+  HashSet numbers = new HashSet();
+  numbers.add('foo');
+  numbers.add('bar');
+  numbers.add('xyz');
+
+  print(numbers);
 }
