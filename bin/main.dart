@@ -1,156 +1,162 @@
 
 //import 'dart:collection';
 //main(){
-//  List data = new List();
-//  data.add('test');
-//  print(data);
+//  Map mapdata = new Map<String,dynamic>(); //بمعنى ان القيمة التي عينتها لاااااازم تكون من نوع String
+//  mapdata[0] = 'testData';//هيك راح يطبع خطأ لأنو الداتا من نوع int
+//  print(mapdata);
 //}
 
 
 //import 'dart:collection';
 //main(){
-//  List data = new List();
-//  data.add('test');
-//  data.add('test1');
-//  print(data);
-//
+//  Map mapdata = new Map<String,dynamic>(); //بمعنى ان القيمة التي عينتها لاااااازم تكون من نوع String
+//  mapdata['data'] = 'testData';
+//  print(mapdata);
+//}
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<int,dynamic>(); //بمعنى ان القيمة التي عينتها لاااااازم تكون من نوع int
+//  mapdata[1] = 'testData';
+//  print(mapdata);
 //}
 
 
 //import 'dart:collection';
 //main(){
-//  List data = new List(); //سيطبعها على شكل List
-//  data.add('test');
-//  data.add('test1');
-//  print(data);
+//  Map mapdata = new Map<dynamic,dynamic>(); //هيك راح ياخد أيي قيمة
+//  mapdata['100'] = true;
+//  print(mapdata);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
+//}
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<bool,dynamic>();
+//  mapdata['xyz'] = 'test';
+//  print(mapdata);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
 //
-//  Set setData = new Set(); //سيطبعها على شكل map
-//  setData.add(1);
-//  setData.add(2);
-//  setData.add(3);
-//  setData.add(4);
+//  List listData = new List<int>();
+//  listData.add(1);
+//  print(listData);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
 //
+//  List listData = new List<String>();
+//  listData.add(1);
+//  print(listData);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
+//
+//  List listData = new List<String>();
+//  listData.add('foo');
+//  print(listData);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
+//
+//  List listData = new List<String>();
+//  listData.add('foo');
+//  print(listData);
+//
+//  HashMap hashdata = new HashMap<String,dynamic>();
+//  hashdata['Test'] = 'dog';
+//  print(hashdata);
+//}
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
+//
+//  List listData = new List<String>();
+//  listData.add('foo');
+//  print(listData);
+//
+//  HashMap hashdata = new HashMap<int,dynamic>();
+//  hashdata['Test'] = 'dog';
+//  print(hashdata);
+//}
+
+
+
+//import 'dart:collection';
+//main(){
+//  Map mapdata = new Map<dynamic,dynamic>();
+//  mapdata['xyz'] = true;
+//  print(mapdata);
+//
+//  List listData = new List<String>();
+//  listData.add('foo');
+//  print(listData);
+//
+//  HashMap hashdata = new HashMap<int,dynamic>();
+//  hashdata[1] = 'dog';
+//  print(hashdata);
+//
+//  Set setData = new Set<String>();
+//  setData.add('Test');
 //  print(setData);
-//}
-
-//import 'dart:collection';
-//main(){
-//  List data = new List(); //سيطبعها على شكل List
-//  data.add('test');
-//  data.add('test1');
-//  print(data);
-//
-//  Set setData = new Set(); //سيطبعها على شكل map
-//  setData.add(1);
-//  setData.add(2);
-//  setData.add(3);
-//  setData.add(4);
-//
-//  print(setData);
-//
-//  HashSet numbers = new HashSet();
-//  numbers.add(10);
-//  numbers.add(20);
-//  numbers.add(30);
-//
-//  print(numbers); //سيطبع بشكل طبيعي
-//}
-
-
-//import 'dart:collection';
-//main(){
-//  List data = new List(); //سيطبعها على شكل List
-//  data.add('test');
-//  data.add('test1');
-//  print(data);
-//
-//  Set setData = new Set(); //سيطبعها على شكل map
-//  setData.add(1);
-//  setData.add(2);
-//  setData.add(3);
-//  setData.add(4);
-//
-//  print(setData);
-//
-//  HashSet numbers = new HashSet();
-//  numbers.add(30);
-//  numbers.add(10);
-//  numbers.add(20);
-//
-//  print(numbers); //سيطبع بشكل طبيعي كما السابق
-//}
-
-
-//import 'dart:collection';
-//main(){
-//  List data = new List(); //سيطبعها على شكل List
-//  data.add('test');
-//  data.add('test1');
-//  print(data);
-//
-//  Set setData = new Set(); //سيطبعها على شكل map
-//  setData.add(1);
-//  setData.add(2);
-//  setData.add(3);
-//  setData.add(4);
-//
-//  print(setData);
-//
-//  HashSet numbers = new HashSet();
-//  numbers.add(30);
-//  numbers.add(10);
-//  numbers.add(20);
-//  numbers.add(40);
-//
-//  print(numbers); //حصل تناقض في موقع الداتا
-//}
-
-
-//import 'dart:collection';
-//main(){
-//  List data = new List(); //سيطبعها على شكل List
-//  data.add('test');
-//  data.add('test1');
-//  print(data);
-//
-//  Set setData = new Set(); //سيطبعها على شكل map
-//  setData.add(1);
-//  setData.add(2);
-//  setData.add(3);
-//  setData.add(4);
-//
-//  print(setData);
-//
-//  HashSet numbers = new HashSet();
-//  numbers.add(0);
-//  numbers.add(1);
-//  numbers.add(2);
-//  numbers.add(3);
-//  numbers.add(4);
-//
-//  print(numbers); //سيطبع بشكل مرتب
 //}
 
 
 import 'dart:collection';
 main(){
-  List data = new List(); //سيطبعها على شكل List
-  data.add('test');
-  data.add('test1');
-  print(data);
+  Map mapdata = new Map<dynamic,dynamic>();
+  mapdata['xyz'] = true;
+  print(mapdata);
 
-  Set setData = new Set(); //سيطبعها على شكل map
-  setData.add(1);
-  setData.add(2);
-  setData.add(3);
-  setData.add(4);
+  List listData = new List<String>();
+  listData.add('foo');
+  print(listData);
 
+  HashMap hashdata = new HashMap<int,dynamic>();
+  hashdata[1] = 'dog';
+  print(hashdata);
+
+  Set setData = new Set<int>();
+  setData.add('Test');
   print(setData);
-
-  HashSet numbers = new HashSet();
-  numbers.add('foo');
-  numbers.add('bar');
-  numbers.add('xyz');
-
-  print(numbers);
 }
