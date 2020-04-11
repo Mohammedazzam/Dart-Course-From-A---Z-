@@ -1,123 +1,90 @@
-
-
-//main(){
-//  Dog dog = new Dog('Rex','2');
-//  print(dog.name)
-//;
-//}
-//class Dog{
-//  final String name;
-//  final String age;
-//  Dog(this.name, this.age);
-//}
-
-
-//main(){
-//  Dog dog = new Dog();
-//  print(dog.name)
-//  ;
-//}
-//class Dog{
-//  final String name;
-//  final String age;
-//  Dog._(this.name, this.age);
-//}
-
-
-//main(){
+//import 'dart:io';
+//main() async{
+//  var textfile = File('data.txt');
+//  var filedata;
 //
-//  var name = "Hello_World";
-//  var result = name.split('_');
-//  print(result);
+//  print(await textfile.exists()); //لو عملت run راح يطبعلي true بمعنى أن الملف موجود
+//  if(await textfile.exists()){
 //
-//}
-
-
-//main(){
-//
-//
-//  Dog dog = new Dog('Rex 21');
-//  print(dog.age)
-//      ;
-//}
-//class Dog{
-//  final String name;
-//  final String age;
-//  factory Dog(String name){
-//    var doginfo = name.split(' ');
-//    return Dog._(doginfo[0], doginfo[1]);
 //  }
-//  Dog._(this.name, this.age);
 //}
 
 
-//main(){
+//import 'dart:io';
+//main() async{
+//  var textfile = File('data.txt');
+//  var filedata;
 //
-//
-//  Dog dog = new Dog('Rex 21');
-//  print(dog.name)
-//  ;
-//}
-//class Dog{
-//  final String name;
-//  final String age;
-//  factory Dog(String name){
-//    var doginfo = name.split(' ');
-//    return Dog._(doginfo[0], doginfo[1]);
+//  if(await textfile.exists()){
+//      filedata = await textfile.readAsString();
+//      print(filedata); //سيطب عالكلام إلي في ملف ال datr
 //  }
-//  Dog._(this.name, this.age);
 //}
 
 
-//main(){
+//لو بدي اعمل copy لهذا الملف بكل سهولة
+//import 'dart:io';
+//main() async{
+//  var textfile = File('data.txt');
+//  var filedata;
 //
-//
-//  Dog dog = new Dog('Rex 21');
-//  print(dog.name)
-//  ;
-//}
-//class Dog{
-//  final String name;
-//  final String age;
-//  factory Dog(String name){
-//    var doginfo = name.split(' ');
-//    return Dog._intern(doginfo[0], doginfo[1]);
+//  if(await textfile.exists()){
+//    filedata = await textfile.readAsString();
+//    
+//    var copy= await File('data2.txt').writeAsString(filedata);
+//    //لو عملت run سينشئ ملف جديد وسيضع نفس ال data الموجودة في الملف السابق
 //  }
-//  Dog._intern(this.name, this.age); //طريقة اخرى
 //}
 
 
-//main(){
+//import 'dart:io';
+//main() async{
+//  var textfile = File('data.txt');
+//  var filedata;
 //
+//  if(await textfile.exists()){
+//    filedata = await textfile.readAsString();
 //
-//  Dog dog = new Dog('Rex 21');
-//  print(dog.name)
-//  ;
+//    var copy= await File('data2.txt').writeAsString(filedata);
+//
+//    print(await copy.length());//سيطبع طول الملف بعدد الحروف المكتوبة
 //}
-//class Dog{
-//  final String name;
-//  final String age;
-//  factory Dog(String name){
-//    var doginfo = name.split(' ');
-//    return Dog._data(doginfo[0], doginfo[1]);
+//}
+
+
+//import 'dart:io';
+//main() async{
+//  var textfile = File('data.txt');
+//  var filedata;
+//
+//  if(await textfile.exists()){
+//    filedata = await textfile.readAsString();
+//
+//    var copy= await File('data2.txt').writeAsString(filedata);
+//
+//    print(await copy.length());//سيطبع طول الملف بعدد الحروف المكتوبة
+//    var open = await File('data2.txt').openWrite().write('Hi Dart'); // سيطبع في الملف هذه الجملة وعدد الطول
 //  }
-//  Dog._data(this.name, this.age); //طريقة اخرى
 //}
 
 
-main(){
+//لطباعة المسار كاملاً
+import 'dart:io';
+import 'package:path/path.dart';
+main() async{
+  var filepath = join(dirname(Platform.script.toFilePath()),'dart.txt'); //سيطبع المسار كامل
+  print(filepath);
+  var textfile = File('data.txt');
+  var filedata;
 
+  if(await textfile.exists()){
+    filedata = await textfile.readAsString();
 
-  Dog dog = new Dog('Rex 21');
-  print(dog.name)
-  ;
-}
-class Dog{
-  final String name;
-  final String age;
-  factory Dog(String name){
-    var doginfo = name.split(' ');
-    return Dog._data(doginfo[0], doginfo[1]);
+    var copy= await File('data2.txt').writeAsString(filedata);
+
+    print(await copy.length());//سيطبع طول الملف بعدد الحروف المكتوبة
+    var open = await File('data2.txt').openWrite().write('Hi Dart'); // سيطبع في الملف هذه الجملة وعدد الطول
   }
-  Dog._data(this.name, this.age); //طريقة اخرى
 }
+
+
